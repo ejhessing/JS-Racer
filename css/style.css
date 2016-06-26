@@ -3,10 +3,23 @@ body {
 }
 
 h1 {
-  margin: 15px auto;
-  color:white;
+  margin: 10px auto;
+  color:black;
   text-align: center;
+}
+h1 span {
+  color:black;
+}
 
+h3 {
+  margin: 15px auto;
+  color:black;
+  text-align: center;
+}
+
+header {
+  background-color:white;
+  padding:15px 0;
 }
 
 /* Make sure there is no spacing between the cells*/
@@ -31,7 +44,7 @@ table {
 }
 
 #player1_strip td#car1 {
-  background-color: yellow;
+  background-color: orange;
 }
 #player2_strip td#car2 {
   background-color: blue;

@@ -30,10 +30,10 @@ table {
   background-color: grey;
 }
 
-#player1_strip td.active {
+#player1_strip td#car1 {
   background-color: black;
 }
-#player2_strip td.active {
+#player2_strip td#car2 {
   background-color: blue;
 }
 

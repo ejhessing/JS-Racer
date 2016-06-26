@@ -11,7 +11,14 @@ function keyPressed (evt) {
   }
 }
 
+function moveCar (player) {
+  var strip = document.getElementById('player' + player + '_strip');
+  var currentPos = document.getElementById('car' + player);
+  var nextPos = strip.cells[currentPos.cellIndex + 1];
 
+  currentPos.id = ""; //classList.remove('car' + 1);
+  nextPos.id = "car" + player;
+}
 
 
 

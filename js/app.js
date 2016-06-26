@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keyup', keyPressed);
 });
 
+//variables to keep track of win conditions
+var count1 = 0,
+    count2 = 0;
 
 function keyPressed (evt) {
   if (evt.which === 81) { //q key
@@ -11,13 +14,22 @@ function keyPressed (evt) {
   }
 }
 
-function moveCar (player) {
-  var strip = document.getElementById('player' + player + '_strip');
-  var currentPos = document.getElementById('car' + player);
-  var nextPos = strip.cells[currentPos.cellIndex + 1];
 
-  currentPos.id = ""; //classList.remove('car' + 1);
-  nextPos.id = "car" + player;
+function moveCar (player) {
+  var strip = document.getElementById('player' + player + '_strip'),
+      currentPos = document.getElementById('car' + player),
+      nextPos = strip.cells[currentPos.cellIndex + 1];
+
+  //increase the count tracker
+  player === 1 ? count1++ : count2++;
+
+  //check for win, otherwise move the car
+  if(count1 === 35 || count2 === 35) {
+    alert("Player " + player + " wins!");
+  } else {
+    currentPos.id = "";
+    nextPos.id = "car" + player;
+  }
 }
 
 

@@ -4,11 +4,8 @@ body {
 
 h1 {
   margin: 10px auto;
-  color:black;
+  color:red;
   text-align: center;
-}
-h1 span {
-  color:black;
 }
 
 h3 {
@@ -30,8 +27,15 @@ table.no-spacing {
 
 /* size of the cells*/
 .racer_table td {
-  height: 25px;
-  width: 40px;
+  height: 35px;
+  width: 50px;
+}
+
+.racer_table td.name {
+  width:150px;
+  color:white;
+  text-transform: uppercase;
+  vertical-align: center;
 }
 
 table {
@@ -71,8 +75,10 @@ table {
 
 /* Finish line*/
 .racer_table td.finish {
+  width: 10px;
   background-color:black;
 }
 .racer_table td.finish1 {
+  width: 10px;
   background-color:white;
 }

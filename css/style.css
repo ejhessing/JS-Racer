@@ -15,14 +15,10 @@ table.no-spacing {
   border-collapse: collapse;
 }
 
+/* size of the cells*/
 .racer_table td {
   height: 25px;
   width: 40px;
-}
-
-.racer_table td.finish {
-  height: 25px;
-  width: 20px;
 }
 
 table {

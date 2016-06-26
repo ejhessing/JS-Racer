@@ -1,7 +1,5 @@
-body {
-  background-color:darkgreen;
-}
 
+/* Header and Instructions*/
 h1 {
   margin: 10px auto;
   color:red;
@@ -17,6 +15,15 @@ h3 {
 header {
   background-color:white;
   padding:15px 0;
+}
+
+/* General Table placement */
+body {
+  background-color:darkgreen;
+}
+
+table {
+  margin: 130px 150px;
 }
 
 /* Make sure there is no spacing between the cells*/
@@ -38,9 +45,7 @@ table.no-spacing {
   vertical-align: center;
 }
 
-table {
-  margin: 70px 150px;
-}
+
 
 /* Racing Track*/
 .racer_table tr.track {
@@ -60,9 +65,6 @@ table {
   background-color: red;
 }
 
-/*.racer_table td.sides:nth-child(2n) {
-  background-color: white;
-}*/
 .racer_table td.white {
   background-color: white;
 }

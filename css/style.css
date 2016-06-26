@@ -31,7 +31,7 @@ table {
 }
 
 #player1_strip td#car1 {
-  background-color: black;
+  background-color: yellow;
 }
 #player2_strip td#car2 {
   background-color: blue;

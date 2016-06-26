@@ -24,13 +24,16 @@ function moveCar (player) {
   player === 1 ? count1++ : count2++;
 
   //check for win, otherwise move the car
-  if(count1 === 35 || count2 === 35) {
+  if(count1 === 36 || count2 === 36) {
     alert("Player " + player + " wins!");
+    //reset game by reloading the page
+    window.location.reload();
   } else {
     currentPos.id = "";
     nextPos.id = "car" + player;
   }
 }
+
 
 
 
